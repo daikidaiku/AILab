@@ -1,0 +1,114 @@
+body {
+  background-color: #F6FF8C;
+}
+
+header {
+  max-width: 100%;
+  background-color: #35AF90;
+  display: flex;
+  /* justify-content: space-between; */
+  /* flexboxアイテムの最初（左）を起点、最後を終点とし、残りの要素を均等に配置できる指定方法 */
+  height: 180px;
+  padding: 0 4%;
+  align-items: center;
+  /* 縦方向に中央揃え */
+  position: sticky;
+  top: 0;
+}
+
+header h3 {
+  float: left;
+}
+
+p {
+  color: #000;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*キーワード検索欄*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ki-input {
+  fill: #FFF;
+  stroke-width: 3px;
+  stroke: #35AF90;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 637px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10rem;
+}
+
+.button {
+
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  background: url(../images/gpt.png), lightgray 50% / cover no-repeat;
+}
+
+.text {
+  text-align: center;
+}
+
+/* アイデアのテンプレート */
+.idea-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* 折り返しをする */
+}
+
+/* スキルカードを3等分する */
+.idea-item-1 {
+  width: 30%;
+  /* widthが100%を超えたら折り返す */
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.idea-item-1 h2 {
+  color: #000;
+}
+
+.idea-item-2 {
+  width: 30%;
+  /* widthが100%を超えたら折り返す */
+  background-color: #35AF90;
+  ;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.idea-item-3 {
+  width: 30%;
+  /* widthが100%を超えたら折り返す */
+  background-color: #000;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.idea-item h2 {
+  text-align: center;
+}
